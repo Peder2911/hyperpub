@@ -1,10 +1,5 @@
 
-import sys
-import os
 import jinja2
-import tempfile
-import subprocess
-import json
 
 from io import BytesIO
 import base64
@@ -12,8 +7,6 @@ import base64
 from typing import Tuple,Dict,List,Union
 
 import re
-
-from collections import defaultdict
 
 import pandas as pd  # type: ignore
 from matplotlib import pyplot as plt # type: ignore

@@ -15,6 +15,7 @@ setuptools.setup(
     url="https://github.com/Peder2911/hyperpub",
     packages=setuptools.find_packages(),
     scripts= ["bin/hyperpub"],
+
     package_data = {
         "templates":["*"],
         "hyperpub":["html/*","css/*","templates/*"]
@@ -26,4 +27,9 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.7',
+    install_requires=[
+        "Jinja2==2.11.2",
+        "pandas==1.0.4",
+        "fire==0.3.1"
+    ]
 )
