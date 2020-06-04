@@ -1,0 +1,82 @@
+
+body {
+   font-family: "raleway";
+   font-size: 4.3mm;
+}
+
+@page {
+   margin-left: 2cm;
+   margin-right: 2cm;
+   margin-top: 2cm;
+   margin-bottom: 4cm;
+   size: A4;
+}
+
+h1 {
+  page-break-before: always;
+}
+
+h1, h2, h3, h4, h5 {
+  page-break-after: avoid;
+}
+
+table, img, figure {
+  page-break-inside: avoid;
+}
+
+@page:right{
+  @bottom-right {
+    content: counter(page);
+  }
+}
+
+@page:left{
+  @bottom-left {
+    content: counter(page);
+  }
+}
+
+@page:left{
+  @bottom-left {
+    content: "Page " counter(page) " of " counter(pages);
+  }
+}
+
+.result {
+   display: grid;
+   width: 100vw;
+   justify-items: center;
+   page-break-inside: avoid;
+}
+
+.table-container {
+   display: inline-block;
+}
+
+table {
+   min-width: 5cm;
+   border-collapse: collapse;
+   margin-top: 1cm;
+   margin-bottom: 1cm;
+}
+
+table, tr, th, td {
+   border: none;
+}
+
+thead>tr{
+   background-color: #f0f0f0;
+}
+
+td {
+   border: 1px solid #f0f0f0;
+}
+
+tr:nth-child(even){
+   background-color: #f0f0f0;
+}
+
+td {
+   padding: 3mm
+}
+

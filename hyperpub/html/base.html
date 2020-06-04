@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width" />
+      <title>Doc</title>
+      <style>
+         {% include "fix.css" %}
+      </style>
+      {% block header %}
+      {% endblock %}
+   </head>
+   <body>
+      {% block content %}
+      {% endblock %}
+
+      {% block footer %}
+      {% endblock %}
+   </body>
+</html>
