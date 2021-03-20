@@ -28,7 +28,7 @@ setuptools.setup(
     ],
     python_requires='>=3.7',
     install_requires=[
-        "Jinja2==2.11.2",
+        "Jinja2==2.11.3",
         "pandas==1.0.4",
         "fire==0.3.1"
     ]
